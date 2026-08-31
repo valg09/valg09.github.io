@@ -1,0 +1,215 @@
+/* style.css - Navy Blue Professional Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #1e1e2a;
+    line-height: 1.5;
+}
+
+.resume-container {
+    max-width: 950px;
+    width: 100%;
+    background: #ffffff;
+    padding: 45px 55px 50px 55px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+}
+
+/* ----- HEADER / NAME ----- */
+header {
+    text-align: center;
+    border-bottom: 3px solid #1E3A8A;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1E3A8A;
+    margin-bottom: 6px;
+}
+
+.contact {
+    font-size: 15px;
+    color: #2c3e50;
+    word-spacing: 4px;
+}
+
+.contact a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ----- SECTIONS ----- */
+section {
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1E3A8A;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background-color: #1E3A8A;
+    margin-bottom: 14px;
+    opacity: 0.6;
+}
+
+/* ----- SKILLS LIST (clean columns) ----- */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 6px;
+    font-size: 14.5px;
+}
+
+.skills-list strong {
+    color: #1E3A8A;
+    font-weight: 700;
+}
+
+/* ----- JOB ENTRIES ----- */
+.job {
+    margin-bottom: 18px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+.company {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e1e2a;
+}
+
+.date {
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.job ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 4px;
+}
+
+.job ul li {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #1e1e2a;
+}
+
+/* ----- EDUCATION ----- */
+.edu-item {
+    margin-bottom: 14px;
+}
+
+.edu-item .school {
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #1e1e2a;
+}
+
+.edu-item .edu-date {
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: 500;
+    float: right;
+}
+
+.degree {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-top: 2px;
+}
+
+.edu-item ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 4px;
+}
+
+.edu-item ul li {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+/* ----- RESPONSIVE TWEAKS ----- */
+@media (max-width: 700px) {
+    .resume-container {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edu-item .edu-date {
+        float: none;
+        display: inline-block;
+        margin-left: 8px;
+    }
+}
+
+/* Print optimization */
+@media print {
+    body {
+        background: white;
+        padding: 0.2in;
+    }
+    .resume-container {
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+    }
+    .job-header {
+        break-inside: avoid;
+    }
+}
