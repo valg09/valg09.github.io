@@ -25,7 +25,7 @@ body {
     border-radius: 8px;
 }
 
-/* ----- HEADER / NAME ----- */
+/* HEADER */
 header {
     text-align: center;
     border-bottom: 3px solid #1E3A8A;
@@ -57,7 +57,7 @@ header h1 {
     text-decoration: underline;
 }
 
-/* ----- SECTIONS ----- */
+/* SECTIONS */
 section {
     margin-bottom: 22px;
 }
@@ -79,7 +79,7 @@ hr {
     opacity: 0.6;
 }
 
-/* ----- SKILLS LIST (clean columns) ----- */
+/* SKILLS */
 .skills-list {
     list-style: none;
     padding: 0;
@@ -95,7 +95,7 @@ hr {
     font-weight: 700;
 }
 
-/* ----- JOB ENTRIES ----- */
+/* JOBS */
 .job {
     margin-bottom: 18px;
 }
@@ -140,7 +140,7 @@ hr {
     color: #1e1e2a;
 }
 
-/* ----- EDUCATION ----- */
+/* EDUCATION */
 .edu-item {
     margin-bottom: 14px;
 }
@@ -176,7 +176,7 @@ hr {
     margin-bottom: 3px;
 }
 
-/* ----- RESPONSIVE TWEAKS ----- */
+/* RESPONSIVE */
 @media (max-width: 700px) {
     .resume-container {
         padding: 25px 20px;
@@ -198,7 +198,7 @@ hr {
     }
 }
 
-/* Print optimization */
+/* PRINT */
 @media print {
     body {
         background: white;
